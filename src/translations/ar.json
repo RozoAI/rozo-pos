@@ -6,6 +6,7 @@
     "backToHome": "العودة إلى الرئيسية",
     "cancel": "إلغاء",
     "close": "يغلق",
+    "copiedToClipboard": "coppied إلى الحافظة",
     "createdAt": "تم إنشاؤها في",
     "description": "وصف",
     "loading": "تحميل",
@@ -13,7 +14,12 @@
     "note": "ملحوظة",
     "printReceipt": "طباعة الإيصال",
     "privacyPolicy": "سياسة الخصوصية",
-    "termsOfService": "شروط الخدمة"
+    "termsOfService": "شروط الخدمة",
+    "walletAddress": "عنوان محفظة",
+    "walletBalance": "توازن المحفظة"
+  },
+  "home": {
+    "title": "بيت"
   },
   "onboarding": {
     "message": "مرحبًا بك في Rozo POS"
@@ -31,7 +37,8 @@
       "failed": "فشل",
       "pending": "قيد الانتظار",
       "processing": "قيد المعالجة"
-    }
+    },
+    "title": "طلبات"
   },
   "payment": {
     "PaymentQRCode": "رمز الدفع (QR)",

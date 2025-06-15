@@ -6,6 +6,7 @@
     "backToHome": "मुख्य पृष्ठ पर लौटें",
     "cancel": "रद्द करें",
     "close": "बंद करना",
+    "copiedToClipboard": "क्लिपबोर्ड के लिए मुकाबला किया",
     "createdAt": "पर बनाया गया",
     "description": "विवरण",
     "loading": "लोड करना",
@@ -13,7 +14,12 @@
     "note": "टिप्पणी",
     "printReceipt": "रसीद प्रिंट करें",
     "privacyPolicy": "गोपनीयता नीति",
-    "termsOfService": "सेवा की शर्तें"
+    "termsOfService": "सेवा की शर्तें",
+    "walletAddress": "बटुए का पता",
+    "walletBalance": "बटुआ शेष"
+  },
+  "home": {
+    "title": "घर"
   },
   "onboarding": {
     "message": "Rozo POS में आपका स्वागत है"
@@ -31,7 +37,8 @@
       "failed": "विफल",
       "pending": "बकाया",
       "processing": "प्रसंस्करण में"
-    }
+    },
+    "title": "आदेश"
   },
   "payment": {
     "PaymentQRCode": "भुगतान क्यूआर कोड",

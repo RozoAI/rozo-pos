@@ -6,6 +6,7 @@
     "backToHome": "Voltar para Início",
     "cancel": "Cancelar",
     "close": "Fechar",
+    "copiedToClipboard": "Coppied para a área de transferência",
     "createdAt": "Criado em",
     "description": "Descrição",
     "loading": "Carregando",
@@ -13,7 +14,12 @@
     "note": "Observação",
     "printReceipt": "Imprimir Recibo",
     "privacyPolicy": "Política de Privacidade",
-    "termsOfService": "Termos de Serviço"
+    "termsOfService": "Termos de Serviço",
+    "walletAddress": "Endereço da carteira",
+    "walletBalance": "Balanço da carteira"
+  },
+  "home": {
+    "title": "Lar"
   },
   "onboarding": {
     "message": "Bem-vindo ao Rozo POS"
@@ -31,7 +37,8 @@
       "failed": "Falhou",
       "pending": "Pendente",
       "processing": "Processando"
-    }
+    },
+    "title": "Ordens"
   },
   "payment": {
     "PaymentQRCode": "QR Code de Pagamento",

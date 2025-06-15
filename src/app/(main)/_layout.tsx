@@ -3,6 +3,7 @@ import { Redirect, Tabs } from 'expo-router';
 import { HomeIcon, Settings2Icon, ShoppingBagIcon } from 'lucide-react-native';
 import { useColorScheme } from 'nativewind';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/ui/icon';
 import { Text } from '@/components/ui/text';
@@ -12,6 +13,7 @@ import { useApp } from '@/providers/app.provider';
 export default function TabLayout() {
   const theme = useColorScheme();
   const { isAuthenticated } = useApp();
+  const { t } = useTranslation();
 
   if (!isAuthenticated) {
     return <Redirect href="login" />;
@@ -52,7 +54,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: t('home.title'),
           tabBarIcon: ({ color }: any) => <Icon as={HomeIcon} size="md" color={color} />,
           tabBarButtonTestID: 'home-tab',
         }}
@@ -61,7 +63,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="orders"
         options={{
-          title: 'Orders',
+          title: t('order.title'),
           tabBarIcon: ({ color }: any) => <Icon as={ShoppingBagIcon} size="md" color={color} />,
           tabBarButtonTestID: 'orders-tab',
         }}
@@ -69,7 +71,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="settings"
         options={{
-          title: 'Settings',
+          title: t('settings.title'),
           tabBarIcon: ({ color }: any) => <Icon as={Settings2Icon} size="md" color={color} />,
           tabBarButtonTestID: 'settings-tab',
         }}

@@ -6,6 +6,7 @@
     "backToHome": "返回主页",
     "cancel": "取消",
     "close": "关闭",
+    "copiedToClipboard": "挤压到剪贴板",
     "createdAt": "创建在",
     "description": "描述",
     "loading": "加载中",
@@ -13,7 +14,12 @@
     "note": "笔记",
     "printReceipt": "打印收据",
     "privacyPolicy": "隐私政策",
-    "termsOfService": "服务条款"
+    "termsOfService": "服务条款",
+    "walletAddress": "钱包地址",
+    "walletBalance": "钱包平衡"
+  },
+  "home": {
+    "title": "家"
   },
   "onboarding": {
     "message": "欢迎使用 Rozo POS"
@@ -31,7 +37,8 @@
       "failed": "失败",
       "pending": "待处理",
       "processing": "处理中"
-    }
+    },
+    "title": "订单"
   },
   "payment": {
     "PaymentQRCode": "付款二维码",

@@ -6,6 +6,7 @@
     "backToHome": "Back to Home",
     "cancel": "Cancel",
     "close": "Close",
+    "copiedToClipboard": "Coppied to Clipboard",
     "createdAt": "Created at",
     "description": "Description",
     "loading": "Loading",
@@ -13,7 +14,12 @@
     "note": "Note",
     "printReceipt": "Print Receipt",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "walletAddress": "Wallet Address",
+    "walletBalance": "Wallet Balance"
+  },
+  "home": {
+    "title": "Home"
   },
   "onboarding": {
     "message": "Welcome to Rozo POS"
@@ -31,7 +37,8 @@
       "failed": "Failed",
       "pending": "Pending",
       "processing": "Processing"
-    }
+    },
+    "title": "Orders"
   },
   "payment": {
     "PaymentQRCode": "Payment QR Code",

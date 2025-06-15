@@ -6,6 +6,7 @@
     "backToHome": "Kembali ke Beranda",
     "cancel": "Batal",
     "close": "Menutup",
+    "copiedToClipboard": "Coppied ke clipboard",
     "createdAt": "Dibuat di",
     "description": "Keterangan",
     "loading": "Memuat",
@@ -13,7 +14,12 @@
     "note": "Catatan",
     "printReceipt": "Cetak Struk",
     "privacyPolicy": "Kebijakan Privasi",
-    "termsOfService": "Syarat dan Ketentuan"
+    "termsOfService": "Syarat dan Ketentuan",
+    "walletAddress": "Alamat dompet",
+    "walletBalance": "Keseimbangan dompet"
+  },
+  "home": {
+    "title": "Rumah"
   },
   "onboarding": {
     "message": "Selamat datang di Rozo POS"
@@ -31,7 +37,8 @@
       "failed": "Gagal",
       "pending": "Tertunda",
       "processing": "Diproses"
-    }
+    },
+    "title": "Pesanan"
   },
   "payment": {
     "PaymentQRCode": "Kode QR Pembayaran",

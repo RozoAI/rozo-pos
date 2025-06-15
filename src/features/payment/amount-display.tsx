@@ -108,7 +108,7 @@ export function AmountDisplay({ amount, dynamicStyles, onExchangeAmount }: Amoun
       <Card className={`w-full rounded-xl shadow-soft-1 ${dynamicStyles.spacing.cardPadding}`}>
         <Text className="text-center text-gray-500 dark:text-gray-200">{t('general.amount')}</Text>
         <Text className={`my-3 text-center font-bold text-gray-800 dark:text-gray-200 ${dynamicStyles.fontSize.amount}`}>
-          {`${formattedAmount} ${defaultCurrency?.symbol}`}
+          {`${formattedAmount} ${defaultCurrency?.code}`}
         </Text>
         {/* USD Conversion */}
         {defaultCurrency?.code !== 'USD' && (

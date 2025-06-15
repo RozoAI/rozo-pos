@@ -39,7 +39,7 @@ export function FilterOrderActionSheet({ onStatusChange }: Props) {
 
   return (
     <>
-      <Button variant="outline" size="xs" onPress={() => setIsOpen(true)}>
+      <Button variant="outline" size="xs" onPress={() => setIsOpen(true)} className="rounded-xl">
         <ButtonIcon as={Funnel} />
         <ButtonText>{getStatusLabel(selectedStatus)}</ButtonText>
       </Button>

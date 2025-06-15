@@ -6,6 +6,7 @@
     "backToHome": "Volver al inicio",
     "cancel": "Cancelar",
     "close": "Cerca",
+    "copiedToClipboard": "Coppied to Portapplappappled",
     "createdAt": "Creado a",
     "description": "Descripción",
     "loading": "Cargando",
@@ -13,7 +14,12 @@
     "note": "Nota",
     "printReceipt": "Imprimir recibo",
     "privacyPolicy": "Política de privacidad",
-    "termsOfService": "Términos del servicio"
+    "termsOfService": "Términos del servicio",
+    "walletAddress": "Dirección de la billetera",
+    "walletBalance": "Equilibrio de billetera"
+  },
+  "home": {
+    "title": "Hogar"
   },
   "onboarding": {
     "message": "Bienvenido a Rozo POS"
@@ -31,7 +37,8 @@
       "failed": "Fallido",
       "pending": "Pendiente",
       "processing": "Procesando"
-    }
+    },
+    "title": "Órdenes"
   },
   "payment": {
     "PaymentQRCode": "Código QR de pago",
