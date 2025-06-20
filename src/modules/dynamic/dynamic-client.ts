@@ -1,13 +1,17 @@
 import { createClient } from '@dynamic-labs/client';
 import { useReactiveClient } from '@dynamic-labs/react-hooks';
 import { ReactNativeExtension } from '@dynamic-labs/react-native-extension';
-import { ViemExtension } from '@dynamic-labs/viem-extension';
+import { type IViemExtension, ViemExtension } from '@dynamic-labs/viem-extension';
 import { WebExtension } from '@dynamic-labs/web-extension';
+import { ZeroDevExtension } from '@dynamic-labs/zerodev-extension';
 import { Platform } from 'react-native';
 
 /**
  * Dynamic client configuration with deep linking support for authentication
  */
+
+type DynamicClient = ReturnType<typeof createClient> & IViemExtension & { zeroDev: any };
+
 /**
  * Initialize the Dynamic client with appropriate extensions based on platform
  */
@@ -25,6 +29,11 @@ if (Platform.OS === 'web') {
   client = client.extend(WebExtension());
 }
 
-export const dynamicClient = client.extend(ViemExtension());
+// Extend with Viem and properly type the result
+client = client.extend(ViemExtension());
+client = client.extend(ZeroDevExtension());
+
+// Export with proper typing
+export const dynamicClient = client as DynamicClient;
 
 export const useDynamic = () => useReactiveClient(dynamicClient);

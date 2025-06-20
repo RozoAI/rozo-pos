@@ -10,16 +10,19 @@
     "createdAt": "Créé à",
     "description": "Description",
     "loading": "Chargement",
+    "max": "Maximum",
     "merchantId": "ID marchand",
     "notFound": "Pas trouvé",
     "note": "Note",
     "printReceipt": "Imprimer le reçu",
     "privacyPolicy": "Politique de confidentialité",
+    "processing": "Traitement",
     "status": "Statut",
     "submit": "Soumettre",
     "termsOfService": "Conditions d’utilisation",
     "walletAddress": "Adresse du portefeuille",
-    "walletBalance": "Équilibre du portefeuille"
+    "walletBalance": "Équilibre du portefeuille",
+    "withdraw": "Retirer"
   },
   "home": {
     "title": "Maison"
@@ -95,5 +98,17 @@
     "version": "Version",
     "website": "Site web"
   },
-  "welcome": "Bienvenue sur Rozo POS"
+  "validation": {
+    "invalidAmount": "Montant non valide",
+    "maxAmount": "Le montant maximum est {{max}}",
+    "minAmount": "Le montant minimum est {{min}}",
+    "required": "Ce champ est obligatoire"
+  },
+  "welcome": "Bienvenue sur Rozo POS",
+  "withdraw": {
+    "error": "Retirer l'erreur",
+    "success": "Retirer avec succès",
+    "supportedOnly": "Pris en charge uniquement {{currency}}",
+    "walletAddressPlaceholder": "Entrez votre adresse de portefeuille"
+  }
 }

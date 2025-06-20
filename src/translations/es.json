@@ -10,16 +10,19 @@
     "createdAt": "Creado a",
     "description": "Descripción",
     "loading": "Cargando",
+    "max": "Máximo",
     "merchantId": "Identificación comercial",
     "notFound": "Extraviado",
     "note": "Nota",
     "printReceipt": "Imprimir recibo",
     "privacyPolicy": "Política de privacidad",
+    "processing": "Tratamiento",
     "status": "Estado",
     "submit": "Entregar",
     "termsOfService": "Términos del servicio",
     "walletAddress": "Dirección de la billetera",
-    "walletBalance": "Equilibrio de billetera"
+    "walletBalance": "Equilibrio de billetera",
+    "withdraw": "Retirar"
   },
   "home": {
     "title": "Hogar"
@@ -95,5 +98,17 @@
     "version": "Versión",
     "website": "Sitio web"
   },
-  "welcome": "Bienvenido a Rozo POS"
+  "validation": {
+    "invalidAmount": "Cantidad no válida",
+    "maxAmount": "La cantidad máxima es {{max}}",
+    "minAmount": "La cantidad mínima es {{min}}",
+    "required": "Este campo es obligatorio"
+  },
+  "welcome": "Bienvenido a Rozo POS",
+  "withdraw": {
+    "error": "Error de retirar",
+    "success": "Retirarse con éxito",
+    "supportedOnly": "Solo compatible {{currency}}",
+    "walletAddressPlaceholder": "Ingrese su dirección de billetera"
+  }
 }

@@ -7,7 +7,7 @@ import { showMessage } from 'react-native-flash-message';
 import { twMerge } from 'tailwind-merge';
 import type { StoreApi, UseBoundStore } from 'zustand';
 
-import { currencyConfigs } from '@/lib/currency-config';
+import { currencies } from '@/lib/currencies';
 import { type MerchantOrder } from '@/resources/schema/order';
 
 // Platform
@@ -106,7 +106,7 @@ export const getChainName = (chainId: number | string): string => {
 };
 
 export function formatCurrency(amount: string | number, currencyCode: string = 'USD'): string {
-  const config = currencyConfigs[currencyCode] || currencyConfigs.USD;
+  const config = currencies[currencyCode] || currencies.USD;
   const numAmount = typeof amount === 'string' ? parseFloat(amount) : amount;
 
   if (isNaN(numAmount)) return `${config.symbol}0`;

@@ -1,38 +1,48 @@
-'use client';
-
 import { useCallback, useEffect, useState } from 'react';
-import { type Address, formatEther } from 'viem';
-import { mainnet } from 'viem/chains';
 
-import { dynamicClient } from '@/modules/dynamic/dynamic-client';
+import { getTokenBalance, type TokenBalanceResult } from '@/modules/dynamic/token-operations';
+import { useApp } from '@/providers/app.provider';
 
-const publicViemClient = dynamicClient.viem.createPublicClient({ chain: mainnet });
+type UseWalletBalanceResult = {
+  balance: TokenBalanceResult | null;
+  isLoading: boolean;
+  error: string | null;
+  refetch: () => Promise<void>;
+};
 
-export const useWalletBalance = (address: Address) => {
-  const [balance, setBalance] = useState<string>('0.00');
-  const [isLoading, setIsLoading] = useState(true);
+export function useWalletBalance(): UseWalletBalanceResult {
+  const { primaryWallet, merchantToken } = useApp();
+
+  const [balance, setBalance] = useState<TokenBalanceResult | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
   const fetchBalance = useCallback(async () => {
+    if (!primaryWallet || !merchantToken) {
+      return;
+    }
+
     setIsLoading(true);
     setError(null);
 
     try {
-      const walletBalance = await publicViemClient.getBalance({ address });
-      const formattedBalance = formatEther(BigInt(walletBalance || '0'));
-      setBalance(Number.parseFloat(formattedBalance).toFixed(4));
+      if (primaryWallet && merchantToken) {
+        const balance = await getTokenBalance(primaryWallet, merchantToken);
+        setBalance(balance);
+      }
     } catch (err) {
-      console.error('Error fetching balance:', err);
-      setError('Failed to fetch balance');
-      setBalance('0.00');
+      setError(err instanceof Error ? err.message : 'Failed to fetch balance');
     } finally {
       setIsLoading(false);
     }
-  }, [address]);
+  }, [primaryWallet, merchantToken]);
 
+  // Fetch balance on component mount and when dependencies change
   useEffect(() => {
-    fetchBalance();
-  }, [fetchBalance]);
+    if (primaryWallet || merchantToken) {
+      fetchBalance();
+    }
+  }, []);
 
   return {
     balance,
@@ -40,4 +50,4 @@ export const useWalletBalance = (address: Address) => {
     error,
     refetch: fetchBalance,
   };
-};
+}

@@ -10,16 +10,19 @@
     "createdAt": "Создан в",
     "description": "Описание",
     "loading": "Загрузка",
+    "max": "Максимум",
     "merchantId": "Торговый идентификатор",
     "notFound": "Не найдено",
     "note": "Примечание",
     "printReceipt": "Печать чека",
     "privacyPolicy": "Политика конфиденциальности",
+    "processing": "Обработка",
     "status": "Статус",
     "submit": "Представлять на рассмотрение",
     "termsOfService": "Условия использования",
     "walletAddress": "Адрес кошелька",
-    "walletBalance": "Баланс кошелька"
+    "walletBalance": "Баланс кошелька",
+    "withdraw": "Отзывать"
   },
   "home": {
     "title": "Дом"
@@ -95,5 +98,17 @@
     "version": "Версия",
     "website": "Веб-сайт"
   },
-  "welcome": "Добро пожаловать в Rozo POS"
+  "validation": {
+    "invalidAmount": "Неверная сумма",
+    "maxAmount": "Максимальная сумма {{max}}",
+    "minAmount": "Минимальная сумма равен {{min}}",
+    "required": "Это поле обязательно к заполнению"
+  },
+  "welcome": "Добро пожаловать в Rozo POS",
+  "withdraw": {
+    "error": "Снять ошибку",
+    "success": "Успешно уйти",
+    "supportedOnly": "Поддерживается только {{currency}}",
+    "walletAddressPlaceholder": "Введите адрес своего кошелька"
+  }
 }

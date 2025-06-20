@@ -14,7 +14,7 @@ import { Pressable } from '@/components/ui/pressable';
 import { Spinner } from '@/components/ui/spinner';
 import { View } from '@/components/ui/view';
 import { showToast } from '@/lib';
-import { currencyConfigs } from '@/lib/currency-config';
+import { currencies as currencyList, defaultCurrency } from '@/lib/currencies';
 import { useApp } from '@/providers/app.provider';
 import { useCreateProfile } from '@/resources/api';
 
@@ -38,7 +38,7 @@ export function ActionSheetCurrencySwitcher({ trigger, value }: ActionSheetCurre
 
   // Memoize currencies to prevent unnecessary re-renders
   const currencies = useMemo<CurrencyOption[]>(() => {
-    return Object.values(currencyConfigs);
+    return Object.values(currencyList);
   }, []);
 
   // Create refs once and store them
@@ -88,7 +88,7 @@ export function ActionSheetCurrencySwitcher({ trigger, value }: ActionSheetCurre
   }, [currencies, selectedValue, initialLabel]);
 
   const initialFocusRef = useMemo(() => {
-    const currentCurrency = selectedValue?.toUpperCase() ?? currencyConfigs.USD.code;
+    const currentCurrency = selectedValue?.toUpperCase() ?? defaultCurrency?.code;
     return itemRefs.current[currentCurrency];
   }, [selectedValue]);
 

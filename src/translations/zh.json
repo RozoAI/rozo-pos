@@ -10,16 +10,19 @@
     "createdAt": "创建在",
     "description": "描述",
     "loading": "加载中",
+    "max": "最大限度",
     "merchantId": "商人ID",
     "notFound": "未找到",
     "note": "笔记",
     "printReceipt": "打印收据",
     "privacyPolicy": "隐私政策",
+    "processing": "加工",
     "status": "地位",
     "submit": "提交",
     "termsOfService": "服务条款",
     "walletAddress": "钱包地址",
-    "walletBalance": "钱包平衡"
+    "walletBalance": "钱包平衡",
+    "withdraw": "提取"
   },
   "home": {
     "title": "家"
@@ -95,5 +98,17 @@
     "version": "版本",
     "website": "网站"
   },
-  "welcome": "欢迎使用 Rozo POS"
+  "validation": {
+    "invalidAmount": "无效的金额",
+    "maxAmount": "最大金额为{{max}}",
+    "minAmount": "最低金额为{{min}}",
+    "required": "此字段是必需的"
+  },
+  "welcome": "欢迎使用 Rozo POS",
+  "withdraw": {
+    "error": "提取错误",
+    "success": "成功提取",
+    "supportedOnly": "仅支持{{currency}}",
+    "walletAddressPlaceholder": "输入您的钱包地址"
+  }
 }

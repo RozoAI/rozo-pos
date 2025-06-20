@@ -27,10 +27,10 @@ export default function TabLayout() {
           height: 64,
           paddingTop: 6,
           paddingBottom: 10,
-          backgroundColor: theme?.colorScheme === 'dark' ? '#141419' : '#FFFFFF',
+          backgroundColor: theme?.colorScheme === 'dark' ? '#222430' : '#FFFFFF',
           elevation: 0,
           shadowOpacity: 0.5,
-          borderTopColor: theme?.colorScheme === 'dark' ? '#141419' : '#E5E7EB',
+          borderTopColor: theme?.colorScheme === 'dark' ? '#222430' : '#E5E7EB',
         },
         tabBarActiveTintColor: '#0369A1', // Primary blue color
         tabBarInactiveTintColor: theme?.colorScheme === 'dark' ? '#FFFFFF' : '#6B7280', // Gray-500
@@ -47,7 +47,7 @@ export default function TabLayout() {
         ),
         sceneStyle: {
           padding: 16,
-          backgroundColor: theme?.colorScheme === 'dark' ? '#141419' : '#FFFFFF',
+          backgroundColor: theme?.colorScheme === 'dark' ? '#141419' : '#f8f8ff',
         },
       }}
     >

@@ -10,16 +10,19 @@
     "createdAt": "Created at",
     "description": "Description",
     "loading": "Loading",
+    "max": "Maximum",
     "merchantId": "Merchant ID",
     "notFound": "Not found",
     "note": "Note",
     "printReceipt": "Print Receipt",
     "privacyPolicy": "Privacy Policy",
+    "processing": "Processing",
     "status": "Status",
     "submit": "Submit",
     "termsOfService": "Terms of Service",
     "walletAddress": "Wallet Address",
-    "walletBalance": "Wallet Balance"
+    "walletBalance": "Wallet Balance",
+    "withdraw": "Withdraw"
   },
   "home": {
     "title": "Home"
@@ -95,5 +98,17 @@
     "version": "Version",
     "website": "Website"
   },
-  "welcome": "Welcome to Rozo POS"
+  "validation": {
+    "invalidAmount": "Invalid amount",
+    "maxAmount": "Maximum amount is {{max}}",
+    "minAmount": "Minimum amount is {{min}}",
+    "required": "This field is required"
+  },
+  "welcome": "Welcome to Rozo POS",
+  "withdraw": {
+    "error": "Withdraw error",
+    "success": "Withdraw successfully",
+    "supportedOnly": "Supported only {{currency}}",
+    "walletAddressPlaceholder": "Input your Wallet Address"
+  }
 }

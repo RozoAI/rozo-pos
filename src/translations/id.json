@@ -10,16 +10,19 @@
     "createdAt": "Dibuat di",
     "description": "Keterangan",
     "loading": "Memuat",
+    "max": "Maksimum",
     "merchantId": "ID Pedagang",
     "notFound": "Tidak ditemukan",
     "note": "Catatan",
     "printReceipt": "Cetak Struk",
     "privacyPolicy": "Kebijakan Privasi",
+    "processing": "Pengolahan",
     "status": "Status",
     "submit": "Kirim",
     "termsOfService": "Syarat dan Ketentuan",
     "walletAddress": "Alamat dompet",
-    "walletBalance": "Keseimbangan dompet"
+    "walletBalance": "Keseimbangan dompet",
+    "withdraw": "Menarik"
   },
   "home": {
     "title": "Rumah"
@@ -95,5 +98,17 @@
     "version": "Versi",
     "website": "Situs Web"
   },
-  "welcome": "Selamat datang di Rozo POS"
+  "validation": {
+    "invalidAmount": "Jumlah tidak valid",
+    "maxAmount": "Jumlah maksimum adalah {{max}}",
+    "minAmount": "Jumlah minimum adalah {{min}}",
+    "required": "Bidang ini diperlukan"
+  },
+  "welcome": "Selamat datang di Rozo POS",
+  "withdraw": {
+    "error": "Penarikan Kesalahan",
+    "success": "Mundur dengan sukses",
+    "supportedOnly": "Hanya didukung {{currency}}",
+    "walletAddressPlaceholder": "Masukkan alamat dompet Anda"
+  }
 }

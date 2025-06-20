@@ -10,16 +10,19 @@
     "createdAt": "Criado em",
     "description": "Descrição",
     "loading": "Carregando",
+    "max": "Máximo",
     "merchantId": "ID do comerciante",
     "notFound": "Não encontrado",
     "note": "Observação",
     "printReceipt": "Imprimir Recibo",
     "privacyPolicy": "Política de Privacidade",
+    "processing": "Processamento",
     "status": "Status",
     "submit": "Enviar",
     "termsOfService": "Termos de Serviço",
     "walletAddress": "Endereço da carteira",
-    "walletBalance": "Balanço da carteira"
+    "walletBalance": "Balanço da carteira",
+    "withdraw": "Retirar"
   },
   "home": {
     "title": "Lar"
@@ -95,5 +98,17 @@
     "version": "Versão",
     "website": "Website"
   },
-  "welcome": "Bem-vindo ao Rozo POS"
+  "validation": {
+    "invalidAmount": "Quantidade inválida",
+    "maxAmount": "A quantidade máxima é {{max}}",
+    "minAmount": "O valor mínimo é {{min}}",
+    "required": "Este campo é obrigatório"
+  },
+  "welcome": "Bem-vindo ao Rozo POS",
+  "withdraw": {
+    "error": "Retirar erro",
+    "success": "Retirar com sucesso",
+    "supportedOnly": "Somente suportado {{currency}}",
+    "walletAddressPlaceholder": "Insira o endereço da sua carteira"
+  }
 }

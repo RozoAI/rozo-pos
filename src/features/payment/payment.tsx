@@ -194,7 +194,7 @@ export function PaymentScreen() {
               borderTopRightRadius: 16,
             }}
             buttonStyle={{
-              backgroundColor: selectedTheme === 'dark' ? '#141419' : '#ffffff',
+              backgroundColor: selectedTheme === 'dark' ? '#222430' : '#ffffff',
               borderRadius: 16,
               margin: dynamicStyles.numpad.margin,
               height: dynamicStyles.numpad.height,

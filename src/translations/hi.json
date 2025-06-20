@@ -10,16 +10,19 @@
     "createdAt": "पर बनाया गया",
     "description": "विवरण",
     "loading": "लोड करना",
+    "max": "अधिकतम",
     "merchantId": "मर्चेंट आईडी",
     "notFound": "नहीं मिला",
     "note": "टिप्पणी",
     "printReceipt": "रसीद प्रिंट करें",
     "privacyPolicy": "गोपनीयता नीति",
+    "processing": "प्रसंस्करण",
     "status": "स्थिति",
     "submit": "जमा करना",
     "termsOfService": "सेवा की शर्तें",
     "walletAddress": "बटुए का पता",
-    "walletBalance": "बटुआ शेष"
+    "walletBalance": "बटुआ शेष",
+    "withdraw": "निकालना"
   },
   "home": {
     "title": "घर"
@@ -95,5 +98,17 @@
     "version": "संस्करण",
     "website": "वेबसाइट"
   },
-  "welcome": "Rozo POS में आपका स्वागत है"
+  "validation": {
+    "invalidAmount": "अमान्य राशि",
+    "maxAmount": "अधिकतम राशि {{max}} है",
+    "minAmount": "न्यूनतम राशि {{min}} है",
+    "required": "यह फ़ील्ड आवश्यक है"
+  },
+  "welcome": "Rozo POS में आपका स्वागत है",
+  "withdraw": {
+    "error": "त्रुटि वापस लेना",
+    "success": "सफलतापूर्वक वापस लेना",
+    "supportedOnly": "केवल {{currency}} समर्थित",
+    "walletAddressPlaceholder": "अपने वॉलेट पते को इनपुट करें"
+  }
 }

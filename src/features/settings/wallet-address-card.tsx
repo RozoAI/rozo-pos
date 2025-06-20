@@ -9,15 +9,14 @@ import { Icon } from '@/components/ui/icon';
 import { Text } from '@/components/ui/text';
 import { VStack } from '@/components/ui/vstack';
 import { formatAddress, showToast } from '@/lib';
-import { useDynamic } from '@/modules/dynamic/dynamic-client';
+import { useApp } from '@/providers/app.provider';
 
 export const WalletAddressCard = () => {
   const { t } = useTranslation();
-  const { wallets } = useDynamic();
-  const walletAddress = wallets.primary?.address;
+  const { primaryWallet } = useApp();
 
   const copyToClipboard = async () => {
-    await Clipboard.setStringAsync(walletAddress ?? '');
+    await Clipboard.setStringAsync(primaryWallet?.address ?? '');
     showToast({
       message: t('general.copiedToClipboard'),
       type: 'success',
@@ -31,14 +30,18 @@ export const WalletAddressCard = () => {
         <VStack className="items-start" space="xs">
           <Text size="md">{t('general.walletAddress')}</Text>
           <View className="flex-row items-center space-x-1">
-            <Text className="text-primary-500">{formatAddress(walletAddress ?? '')}</Text>
+            <Text className="text-primary-500" size="sm">
+              {formatAddress(primaryWallet?.address ?? '')}
+            </Text>
           </View>
         </VStack>
       </HStack>
 
-      <Button onPress={copyToClipboard} size="xs" variant="link" className="rounded-xl">
-        <ButtonIcon as={Copy}></ButtonIcon>
-      </Button>
+      {primaryWallet?.isAuthenticated && (
+        <Button onPress={copyToClipboard} size="xs" variant="outline" className="rounded-full p-2">
+          <ButtonIcon as={Copy}></ButtonIcon>
+        </Button>
+      )}
     </View>
   );
 };

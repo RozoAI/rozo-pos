@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import { Button } from '@/components/ui/button';
 import { Text } from '@/components/ui/text';
-import { type QuickAmount } from '@/lib/currency-config';
+import { type QuickAmount } from '@/lib/currencies';
 
 import { type DynamicStyles } from './types';
 

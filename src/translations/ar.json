@@ -10,16 +10,19 @@
     "createdAt": "تم إنشاؤها في",
     "description": "وصف",
     "loading": "تحميل",
+    "max": "الحد الأقصى",
     "merchantId": "معرف التاجر",
     "notFound": "لم يتم العثور عليها",
     "note": "ملحوظة",
     "printReceipt": "طباعة الإيصال",
     "privacyPolicy": "سياسة الخصوصية",
+    "processing": "يعالج",
     "status": "حالة",
     "submit": "يُقدِّم",
     "termsOfService": "شروط الخدمة",
     "walletAddress": "عنوان محفظة",
-    "walletBalance": "توازن المحفظة"
+    "walletBalance": "توازن المحفظة",
+    "withdraw": "ينسحب"
   },
   "home": {
     "title": "بيت"
@@ -95,5 +98,17 @@
     "version": "الإصدار",
     "website": "الموقع الإلكتروني"
   },
-  "welcome": "مرحبًا بك في Rozo POS"
+  "validation": {
+    "invalidAmount": "مبلغ غير صالح",
+    "maxAmount": "الحد الأقصى المبلغ هو {{max}}",
+    "minAmount": "الحد الأدنى هو {{min}}",
+    "required": "هذه الخانة مطلوبه"
+  },
+  "welcome": "مرحبًا بك في Rozo POS",
+  "withdraw": {
+    "error": "سحب الخطأ",
+    "success": "الانسحاب بنجاح",
+    "supportedOnly": "مدعوم فقط {{currency}}",
+    "walletAddressPlaceholder": "أدخل عنوان محفظتك"
+  }
 }

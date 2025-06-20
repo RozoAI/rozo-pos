@@ -14,7 +14,7 @@ export type CurrencyConfig = {
 };
 
 // Currency configuration by currency code
-export const currencyConfigs: Record<string, CurrencyConfig> = {
+export const currencies: Record<string, CurrencyConfig> = {
   IDR: {
     label: 'IDR - Indonesian Rupiah (IDR)',
     code: 'IDR',
@@ -68,3 +68,5 @@ export const currencyConfigs: Record<string, CurrencyConfig> = {
     ],
   },
 };
+
+export const defaultCurrency = currencies.USD;

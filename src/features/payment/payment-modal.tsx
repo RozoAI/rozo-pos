@@ -133,7 +133,7 @@ export function PaymentModal({
                 <Text
                   className={`text-center font-bold text-gray-800 dark:text-gray-200 ${dynamicStyles.fontSize.modalAmount}`}
                 >
-                  {`${amount} ${defaultCurrency?.symbol}`}
+                  {`${amount} ${defaultCurrency?.code}`}
                 </Text>
                 <View className="mt-1 rounded-lg bg-gray-100 p-2 dark:bg-gray-800">
                   <Text className={`text-center text-gray-600 dark:text-gray-200 ${dynamicStyles.fontSize.label}`}>

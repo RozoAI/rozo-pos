@@ -10,16 +10,19 @@
     "createdAt": "এটি তৈরি",
     "description": "বর্ণনা",
     "loading": "লোড হচ্ছে",
+    "max": "সর্বাধিক",
     "merchantId": "বণিক আইডি",
     "notFound": "পাওয়া যায় নি",
     "note": "দ্রষ্টব্য",
     "printReceipt": "রশিদ মুদ্রণ করুন",
     "privacyPolicy": "গোপনীয়তা নীতি",
+    "processing": "প্রক্রিয়াজাতকরণ",
     "status": "স্থিতি",
     "submit": "জমা দিন",
     "termsOfService": "পরিষেবার শর্তাবলী",
     "walletAddress": "মানিব্যাগের ঠিকানা",
-    "walletBalance": "মানিব্যাগ ভারসাম্য"
+    "walletBalance": "মানিব্যাগ ভারসাম্য",
+    "withdraw": "প্রত্যাহার"
   },
   "home": {
     "title": "বাড়ি"
@@ -95,5 +98,17 @@
     "version": "সংস্করণ",
     "website": "ওয়েবসাইট"
   },
-  "welcome": "Rozo POS-এ আপনাকে স্বাগতম"
+  "validation": {
+    "invalidAmount": "অবৈধ পরিমাণ",
+    "maxAmount": "সর্বাধিক পরিমাণ {{max}}",
+    "minAmount": "সর্বনিম্ন পরিমাণ {{min}}",
+    "required": "এই ক্ষেত্র প্রয়োজন"
+  },
+  "welcome": "Rozo POS-এ আপনাকে স্বাগতম",
+  "withdraw": {
+    "error": "ত্রুটি প্রত্যাহার",
+    "success": "সফলভাবে প্রত্যাহার",
+    "supportedOnly": "কেবল {{currency}} সমর্থিত",
+    "walletAddressPlaceholder": "আপনার ওয়ালেট ঠিকানা ইনপুট"
+  }
 }
